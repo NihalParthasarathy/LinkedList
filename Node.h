@@ -3,11 +3,18 @@
 #include <iostream>
 
 class Node {
-  Node* getNext();
-  Student* getStudent();
-  void serNext(Node*);
-  Node(Student*);
+public:
   ~Node();
+  Node* getNext();
+  void setValue(Node* newvalue);
+  Student* getStudent();
+  void setNext(Node* newNext);
+  Node(Student*);
+  
+private:
+  Student* student;
+  Node* next;
+  
 }
 
 #endif

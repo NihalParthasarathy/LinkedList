@@ -8,5 +8,9 @@ class Student {
   int id;
   float gpa;
 
+  int setID(newID);
+  char* setFirst(newFirst);
+  char* setLast(newLast);
+  float setGPA(newGPA);
 }
 #endif

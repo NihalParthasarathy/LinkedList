@@ -1,30 +1,24 @@
 #include <iostream>
 #include "Node.h"
-
-Node::Node(Student* newstudent) {
+using namespace std;
+Node::Node(Student* newstudent) {//Sets next to null and student to either s1 or s2
   next = NULL;
   student = newstudent;
 }
 
-Node* Node::getNext() {
+Node* Node::getNext() {//Gets next
   return next;
 }
 
-Student* Node::getStudent() {
+Student* Node::getStudent() {//Gets the student
   return student;
 }
 
-void setNext(Node* newnext) {
+void Node::setNext(Node* newnext) {//Sets next to newnext
   next = newnext;
 }
-Node::~Node() {
+Node::~Node() {//Sets next to null and deletes student pointer
   delete student;
   next = NULL;
 }
-/*void Node::setStudent(Student* newstudent) {
-  student 
-  /*student->setID(id);
-  student->setGPA(gpa);
-  student->setFirst(first);
-  student->setLast(last);
-  }*/
+
